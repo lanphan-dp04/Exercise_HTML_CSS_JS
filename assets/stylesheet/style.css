@@ -57,4 +57,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* UI Desktop */
+@media screen and (max-width: 1024px) {
+
+}
+
+
+/*UI Desktop and UI Tablet */
+@media screen and (max-width: 992px) {
+
+}
+
+/* UI Tablet */
+@media screen and (max-width: 768px) {
+
+}
+
+/* UI Phone */
+@media screen and (max-width: 480px) {
+
+}
+
 
