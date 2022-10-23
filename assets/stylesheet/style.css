@@ -57,14 +57,66 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* main-campus */
+
+.section-campus {
+  background-color: #F9F7F8;
+  padding: 100px 0;
+}
+.campus-title {
+  font-size: 36px;
+}
+.campus-list {
+  padding-left: unset;
+}
+.campus-item {
+  padding: 13px;
+}
+.campus-courses-wrapper {
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #dfe9eb;
+  transition: all 0.3s ease;
+}
+.course-image img {
+  border-radius: 5px;
+}
+.campus-desc {
+  font-size: 22px;
+  padding: 36px 0;
+}
+
+
 /* UI Desktop */
 @media screen and (min-width: 1024px) {
 
+  /* main-campus */
+  .campus-title {
+    font-size: 35px;
+  }
+  .campus-desc {
+    font-size: 19px;
+  }
 }
 
 
 /*UI Desktop and UI Tablet */
 @media screen and (max-width: 992px) {
+
+  /* main-campus */
+  .section-campus {
+    padding: 65px 0;
+  }
+  .campus-title {
+    font-size: 30px;
+  }
+  .course-image img {
+    width: 100%;
+  }
+  .campus-desc {
+    font-size: 19px;
+    padding: 21px 0 0 0;
+  }
 
 }
 
