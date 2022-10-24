@@ -4,23 +4,6 @@ import { initQuestion } from "./question.js";
 
 const questionElement = document.querySelector('.js-question-list');
 
-const renderActive = (id) => {
-  let concernValue = document.querySelector(`.question-${id}`);
-  concernElement.forEach((element) => {
-    if (element.classList.contains("question-active")) {
-      element.classList.remove("question-active");
-    }
-    concernValue.classList.add("question-active");
-  });
-};
-const checkRenderActive = (id) => {
-  let concernValue = document.querySelector(`.question-${id}`);
-  if (concernValue.classList.contains("question-active")) {
-    return concernValue.classList.remove("question-active");
-  }
-  renderActive(id);
-};
-
 const renderDataQuestion = (element) => {
   const liQuestion = document.createElement('li');
   liQuestion.classList.add('question-item', `question-${element.id}`);
@@ -55,6 +38,23 @@ export const renderQuestion = () => {
 renderQuestion();
 
 const concernElement = document.querySelectorAll('.question-item');
+
+const renderActive = (id) => {
+  let concernValue = document.querySelector(`.question-${id}`);
+  concernElement.forEach((element) => {
+    if (element.classList.contains("question-active")) {
+      element.classList.remove("question-active");
+    }
+    concernValue.classList.add("question-active");
+  });
+};
+const checkRenderActive = (id) => {
+  let concernValue = document.querySelector(`.question-${id}`);
+  if (concernValue.classList.contains("question-active")) {
+    return concernValue.classList.remove("question-active");
+  }
+  renderActive(id);
+};
 
 export const handleRenderActive = async() => {
   const questionList = initQuestion;
