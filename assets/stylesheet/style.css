@@ -90,7 +90,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container {
-  margin: 0 7.5%;
   padding-left: auto;
   padding-right: auto;
   padding-left: 15px;
@@ -150,8 +149,9 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 35px;    
 }
 
-ul {
+.col ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .white-color {
@@ -203,7 +203,7 @@ ul {
 }
 
 .fb-color {
-  color: #505050;
+  color: #6a6a6a;
   padding-left: 10px;
 }
 
@@ -220,5 +220,35 @@ ul {
   max-width: 190px;
 }
 
+.address-widget li a i{
+  color: #3484fb;
+}
 
+.address-widget li a i:hover {
+  color: #226FB7;
+}
 
+/* Responsive Footer */
+@media screen and (max-width: 990px) {
+  .row {
+    display: block;
+  }
+  .col {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .col:last-child {
+    margin-bottom: 0;
+  }
+  .footer-bottom .container .row-footer {
+    display: block;
+  }
+
+  .col-img {
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .rs-footer .footer-bottom:before {
+    max-width:620px;
+  }
+}
