@@ -57,25 +57,232 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/* common-concern */
+
+.concern-list {
+  background-color: #F9F8F8;
+}
+.concern-item-wrapper {
+  padding: 50px;
+}
+.concern-video { 
+  position: relative;
+  background-image: url(../image/concern/image-video.png);
+  background-position: center;
+  min-height: 615px;
+}
+.question-list {
+  padding-left: unset;
+}
+.question-item {
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+.question-item-header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #FFFFFF;
+}
+.question-icon {
+  padding-right: 15px;
+}
+.question-icon::after {
+  display: none;
+  font-family: FontAwesome;
+  content: "\f1f7";
+}
+.question-icon::before {
+  font-family: FontAwesome;
+  content: "\f0a2";
+}
+.question-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: unset;
+}
+.question-desc {
+  background-color: #FFFFFF;
+  color: #505050;
+  display: none;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 25px;
+}
+.question-item p {
+  margin-bottom: unset;
+  display: none;
+}
+.question-active .question-item-header {
+  background-color: blue;
+  color: #FFFFFF;
+}
+.question-active .question-title {
+  color: #FFFFFF;
+}
+.question-active .question-desc {
+  display: block;
+}
+.question-active .question-icon::after  {
+  display: block;
+}
+.question-active .question-icon::before  {
+  display: none;
+}
+.concern-image {
+  position: relative;
+}
+.popup-videos {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  background-color: #226FB7;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  text-align: center;
+
+}
+
+.popup-videos:hover::before  {
+  background-color: #226FB7;
+}
+.popup-videos:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  animation: pulse-border 1500ms ease-out infinite;
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 50%;
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.popup-videos i::before {
+  color: #FFFFFF  ;
+  font-size: 30px;
+  line-height: 70px;
+}
+.iframe-wrapper {
+  position: absolute;
+  left: 50%;
+  width:65%;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  top: 300px;
+}
+.iframe-wrapper button {
+  border: none;
+  background-color: unset;
+}
+.iframe-wrapper i {
+  position: absolute;
+  top: 0;
+  margin-top: -10px;
+  color: #FFFFFF;
+  font-size: 25px;
+  right: 0;
+}
+.iframe {
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  background: #000;
+  width: 100%;
+  height: 100%;
+  
+}
+.js-bg-body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5708px;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #0b0b0b;
+  opacity: 0.8;
+}
 /* UI Desktop */
 @media screen and (min-width: 1024px) {
-
+  .iframe-wrapper {
+    width: 80%;
+    height: 550px;
+    
+  }
 }
 
 
 /*UI Desktop and UI Tablet */
 @media screen and (max-width: 992px) {
-
+  .concern-item-wrapper {
+    padding: 0 40px;
+  }
+  .iframe-wrapper {
+    width: 80%;
+    height: 500px;
+    bottom: auto;
+    top: 450px;
+  }
 }
 
 /* UI Tablet */
 @media screen and (max-width: 768px) {
-
+  .concern-item-wrapper {
+    padding: 0 15px;
+  }
+  .question-item-header {
+    padding: 15px;
+  }
+  .question-title {
+    font-size: 16px;
+  }
+  .question-desc {
+    font-size: 14px;
+  }
+  .popup-videos i::before {
+    font-size: 25px;
+  }
+  .iframe-wrapper {
+    width: 90%;
+    height: 350px;
+    top: 650px;
+    bottom: auto;
+  }
 }
 
 /* UI Phone */
 @media screen and (max-width: 480px) {
-
+  .iframe-wrapper {
+    width: 90%;
+    height: 250px;
+    top: 750px;
+    bottom: auto;
+  }
 }
 
 
