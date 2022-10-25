@@ -102,6 +102,10 @@ h1,h2,h3,h4,h5,h6 {
   margin-right: 25px;
   transition: all 0.3s ease;
 }
+.categories-icon img {
+  width:55%; 
+  height: auto;
+}
 .categories-item-title {
   margin-bottom: 5px;
 }

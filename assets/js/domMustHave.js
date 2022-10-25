@@ -8,6 +8,7 @@ const renderDataCourse = (element) => {
   courseElement.appendChild(liItem);
 
   const aLink = document.createElement('a');
+  aLink.href = '#';
   aLink.classList.add('categories-link');
   liItem.appendChild(aLink);
 
