@@ -1,0 +1,167 @@
+body{
+    box-sizing: border-box;
+}
+a{
+    font-weight: 700;
+    color: rgba(0,0,0,.9) !important;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+img{
+    max-width: 100%;
+}
+.header{
+    margin-left: 95px;
+    margin-right: 95px;
+}
+.header-logo{
+    max-width: 250px;
+    padding-right: 50px;
+
+}
+.nav-item{
+    margin: 20px;
+}
+.slidebar-container{
+    height: 100%;
+    width: 500px;
+    background-color: #fafafa;
+    padding: 30px 50px;
+    text-align: center;
+    right: 0;
+    display: none;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    overflow: auto;
+
+}
+
+.slidebar-boxlogo{
+    margin: 20px;
+    max-height: 35px;
+}
+.slidebar-logo{
+    max-width: 100%;
+    height: auto;
+}
+.slidebar-boxcontent{
+    margin: 50px 0 30px 0;
+    text-align: center;
+}
+.slidebar-content{
+    text-align: center;
+}
+.slidebar-imagebox{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.slidebar-image{
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.slidebar-image:hover{
+    transform: scale(1.1);
+}
+.slidebar-map{
+    margin-top: 40px;
+
+}
+.slidebar-kickoff{
+    position: relative;
+    float: unset;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: unset;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #226FB7;
+}
+.slidebar-kickoff:hover{
+    transform: rotate(180deg);
+}
+
+#line {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.line1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 1px !important;
+    height: 20px !important;
+    background: #ffffff;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+.line1 :hover{
+    -webkit-transform: translate(-50%, -50%) rotate(315deg);
+}
+.line2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);    width: 1px !important;
+    height: 20px !important;
+    background: #ffffff;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+.line2 :hover{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+.slidebar-facebookicon{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* tao modal cho anh */
+#modal-container{
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+.modal-box{
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%);
+
+}
+.modal-closebutton{
+    position: absolute ;
+    top: 0;
+    right: 0;
+    color: red;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    float: right;
+    z-index: 100;
+}
+.imagemodal-image{
+    width: 100%;
+    line-height: 0;
+    margin: 0 auto;
+}
