@@ -57,7 +57,52 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
 }
 
+/* main-campus */
 
+.section-campus {
+  background-image: url("../image/campus/home-8-bg.jpg");
+  background-color: #F9F7F8;
+  height: 45vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 70px;
+}
+.campus-title {
+  font-size: 36px;
+}
+.campus-list {
+  padding-left: unset;
+}
+.campus-item {
+  position: relative;
+  animation-duration: 3s; 
+  animation-name: campus-item; 
+  animation-fill-mode: forwards;
+  padding: 13px;
+}
+@keyframes campus-item {
+  from {top: 150px;}
+  to {top: 0px;}
+}
+.campus-courses-wrapper {
+  background-color: #F9F7F8;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #dfe9eb;
+  transition: all 0.3s ease;
+}
+.course-image img {
+  border-radius: 5px;
+}
+.campus-desc {
+  font-size: 22px;
+  padding: 36px 0;
+}
 /* phan huu lan section-categories */
 
 .section-categories {
@@ -135,15 +180,41 @@ h1,h2,h3,h4,h5,h6 {
 
 /* UI Desktop */
 @media screen and (min-width: 1024px) {
+  /* main-campus */
   
-  
-
+  .campus-title {
+    font-size: 35px;
+  }
+  .campus-desc {
+    font-size: 19px;
+  }
 }
-
+@media screen and (max-width: 1024px) {
+  .section-campus {
+    height: unset;
+    padding: 65px 0;
+    background-image: unset;
+  }
+}
 
 /*UI Desktop and UI Tablet */
 @media screen and (max-width: 992px) {
-
+  /* main-campus */
+  .section-campus {
+    height: unset;
+    padding: 65px 0;
+    background-image: unset;
+  }
+  .campus-title {
+    font-size: 30px;
+  }
+  .course-image img {
+    width: 100%;
+  }
+  .campus-desc {
+    font-size: 19px;
+    padding: 21px 0 0 0;
+  }
   /* have-must */
   .section-categories {
     padding: 60px 0;
