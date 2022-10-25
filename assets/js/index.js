@@ -1,3 +1,4 @@
+import { handleSlider } from "./slider.js";
 import { handleRenderActive } from "./domConcern.js";
 import { handleClickVideo } from "./domShowVideo.js";
 import { renderCampus } from "./domCampus.js";
@@ -9,3 +10,4 @@ renderCourses();
 renderCampus();
 handleRenderActive();
 handleClickVideo();
+handleSlider();
