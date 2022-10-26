@@ -12,21 +12,37 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-img{
-    max-width: 100%;
-}
+
 .header{
+    position: fixed;
+    top: 0;
     margin-left: 95px;
     margin-right: 95px;
+    z-index: 1;
 }
+
+a.header-nav {
+    font-weight: 700;
+}
+a.header-nav:hover{
+    transform: scaleX(1.2);
+    border-radius: 5px;
+    color: #ffffff !important;
+    background-color: rgb(157, 181, 190);
+}
+
 .header-logo{
     max-width: 250px;
     padding-right: 50px;
 
 }
 .nav-item{
-    margin: 20px;
+    margin-left: 30px;
 }
+#slidebar{
+    margin-left: 100px;
+}
+
 .slidebar-container{
     height: 100%;
     width: 500px;
@@ -64,6 +80,8 @@ img{
     gap: 10px;
 }
 .slidebar-image{
+    max-width: 100%;
+
     transition: transform .2s;
     margin: 0 auto;
 }
@@ -164,4 +182,10 @@ img{
     width: 100%;
     line-height: 0;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px){
+    #slidebar{
+        display: none;
+    }
 }

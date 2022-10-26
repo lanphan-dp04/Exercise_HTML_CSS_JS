@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    <link rel="stylesheet" href="../css/header.css"/>;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css"/>;
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </head>
@@ -16,42 +17,42 @@
             <a class="navbar-brand" href="#">
                 <img class="header-logo" src="../image/logodevplus.png" alt="devplus">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link header-nav" href="#">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT DEVPLUS</a>
+                <a class="nav-link header-nav" href="#">ABOUT DEVPLUS</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    OUR PROGRAMME
-                </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">ONE PLUS CAMPUS</a>
-                        <a class="dropdown-item" href="#">TWO PLUS CAMPUS</a>
-                        <a class="dropdown-item" href="#">THREE PUS CAMPUS</a>
-                    </div>
-                </li>
+                    <a class="nav-link dropdown-toggle header-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      OUR PROGRAMME
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ONE PLUS CAMPUS</a></li>
+                      <li><a class="dropdown-item" href="#">TWO PLUS CAMPUS</a></li>
+                      <li><a class="dropdown-item" href="#">THREE PLUS CAMPUS</a></li>
+                    </ul>
+                  </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DEVPLUS ACTIVITIES</a>
+                    <a class="header-nav nav-link " href="#">DEVPLUS ACTIVITIES</a>
                 </li>
             </ul>
             </div>
 
             <div id="slidebar">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </div>
-
+    
     <div class="slidebar-container">
         <div class="slidebar-kickoff">
             <div id="line">
@@ -80,13 +81,12 @@
         </div>
     
         <div class="slidebar-map">
-            <img src="../image/offcanvasImage/map.png" alt="devplus" class="slidebar-image">
+            <img style="max-width: 100%;"src="../image/offcanvasImage/map.png" alt="devplus" class="slidebar-image-map">
         </div>
     
         <div class="slidebar-facebookicon">
             <a href="https://www.facebook.com/Devplusprogramme" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>        
-            </a>
+                <i class="fa-brands fa-facebook"></i>            </a>
         </div>
     </div>
    
