@@ -14,16 +14,18 @@ p {
 }
 
 .header{
+    background-color: #ffffff;
     position: fixed;
     top: 0;
-    margin-left: 95px;
-    margin-right: 95px;
+ 
     z-index: 1;
-    height: 100px;
+    width: 100%;
 }
 
 a.header-nav {
     font-weight: 700;
+    font-size: 14px;
+    padding: 0px;
 }
 a.header-nav:hover{
     transform: scaleX(1.2);
@@ -35,6 +37,7 @@ a.header-nav:hover{
 .header-logo{
     max-width: 250px;
     padding-right: 50px;
+    margin-left: 150px;
 
 }
 .nav-item{
@@ -186,13 +189,9 @@ a.header-nav:hover{
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 992px){
-    #slidebar{
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 1250px){
+
+@media only screen and (max-width: 1024px){
     a.header-nav{
         font-size: 14px;
 
@@ -200,4 +199,20 @@ a.header-nav:hover{
     .nav-item{
         margin-left: 10px;
     }
+}
+
+@media only screen and (max-width: 992px){
+    .header{
+        width: auto;
+    }
+    #slidebar{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
