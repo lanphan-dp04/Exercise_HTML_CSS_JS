@@ -6,6 +6,8 @@ export const handleSlider = () => {
     dots: true,
     prevArrow: false,
     nextArrow: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
