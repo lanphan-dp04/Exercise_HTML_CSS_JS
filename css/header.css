@@ -19,6 +19,7 @@ p {
     margin-left: 95px;
     margin-right: 95px;
     z-index: 1;
+    height: 100px;
 }
 
 a.header-nav {
@@ -37,6 +38,7 @@ a.header-nav:hover{
 
 }
 .nav-item{
+
     margin-left: 30px;
 }
 #slidebar{
@@ -184,8 +186,18 @@ a.header-nav:hover{
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 992px){
     #slidebar{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    a.header-nav{
+        font-size: 14px;
+
+    }
+    .nav-item{
+        margin-left: 10px;
     }
 }
