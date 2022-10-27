@@ -1,0 +1,230 @@
+.concern-list {
+  margin: 0;
+  background-color: #f9f8f8;
+}
+.concern-item-wrapper {
+  padding: 50px;
+}
+.concern-video {
+  position: relative;
+  background-image: url(../image/concern/image-video.png);
+  background-position: center;
+  min-height: 615px;
+}
+.question-list {
+  padding-left: unset;
+}
+.question-item {
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+.question-item-header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffffff;
+}
+.question-icon {
+  padding-right: 15px;
+}
+.question-icon::after {
+  display: none;
+  font-family: FontAwesome;
+  content: "\f1f7";
+}
+.question-icon::before {
+  font-family: FontAwesome;
+  content: "\f0a2";
+}
+.question-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: unset;
+}
+.question-desc {
+  background-color: #ffffff;
+  color: #505050;
+  display: none;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 25px;
+}
+.question-item p {
+  margin-bottom: unset;
+  display: none;
+}
+.question-active .question-item-header {
+  background-color: blue;
+  color: #ffffff;
+}
+.question-active .question-title {
+  color: #ffffff;
+}
+.question-active .question-desc {
+  display: block;
+}
+.question-active .question-icon::after {
+  display: block;
+}
+.question-active .question-icon::before {
+  display: none;
+}
+.concern-image {
+  position: relative;
+}
+
+/* show-video-concern */
+.popup-videos {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  background-color: #226fb7;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  text-align: center;
+}
+.popup-videos:hover::before {
+  background-color: #226fb7;
+}
+.popup-videos:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  animation: pulse-border 1500ms ease-out infinite;
+  transition: all 0.3s ease;
+  z-index: -1;
+  border-radius: 50%;
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.popup-videos i::before {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 70px;
+}
+.iframe-wrapper {
+  position: absolute;
+  left: 50%;
+  width: 65%;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  top: 300px;
+}
+.iframe-wrapper button {
+  border: none;
+  background-color: unset;
+}
+.iframe-wrapper i {
+  position: absolute;
+  top: 0;
+  margin-top: -10px;
+  color: #ffffff;
+  font-size: 25px;
+  right: 0;
+}
+.iframe {
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+.js-bg-body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #0b0b0b;
+  opacity: 0.8;
+}
+/* UI Desktop */
+@media screen and (min-width: 1024px) {
+  /* main-concern */
+  .iframe-wrapper {
+    width: 75%;
+    height: 550px;
+    bottom: auto;
+    max-width: 900px;
+  }
+}
+
+/*UI Desktop and UI Tablet */
+@media screen and (max-width: 992px) {
+  /* main-concern */
+  .concern-item-wrapper {
+    padding: 0 40px;
+  }
+  .iframe-wrapper {
+    position: absolute;
+    width: 80%;
+    height: 500px;
+    bottom: auto;
+    top: 450px;
+  }
+}
+
+/* UI Tablet */
+@media screen and (max-width: 768px) {
+  /* main-concern */
+  .concern-item-wrapper {
+    padding: 0 15px;
+  }
+  .question-item-header {
+    padding: 15px;
+  }
+  .question-title {
+    font-size: 16px;
+  }
+  .question-desc {
+    font-size: 14px;
+  }
+  .popup-videos i::before {
+    font-size: 25px;
+  }
+  .iframe-wrapper {
+    width: 90%;
+    height: 350px;
+    top: 250px;
+    bottom: auto;
+  }
+}
+
+/* UI Phone */
+@media screen and (max-width: 480px) {
+  /* main-concern */
+  .iframe-wrapper {
+    width: 90%;
+    height: 250px;
+    top: 250px;
+    bottom: auto;
+  }
+}

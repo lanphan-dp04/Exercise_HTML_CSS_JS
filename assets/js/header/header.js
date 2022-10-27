@@ -22,7 +22,7 @@ closeImageElm.addEventListener("click", (e) => {
 });
 
 for (let i = 0; i <= openModalImageElm.length; i++) {
-  console.log(openModalImageElm[i].src);
+  console.log(openModalImageElm[i]);
   openModalImageElm[i].addEventListener("click", (e) => {
     const openmodalimage = document.getElementById("modal-container");
     openmodalimage.style.display = "block";
