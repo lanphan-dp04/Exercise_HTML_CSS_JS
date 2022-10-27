@@ -7,7 +7,7 @@
 }
 .concern-video {
   position: relative;
-  background-image: url(../image/concern/image-video.png);
+  background-image: url(../image/concern/image-video.webp);
   background-position: center;
   min-height: 615px;
 }
