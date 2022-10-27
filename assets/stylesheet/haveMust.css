@@ -114,6 +114,7 @@
   /* have-must */
   .title {
     font-size: 25px;
+    margin-bottom: 30px;
   }
   .categories-item-wrapper {
     padding: 15px;

@@ -1,49 +1,75 @@
-.section-admission{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #f3f8f9;
+.section-admission {
+  overflow: hidden;
+  padding: 0 0 100px 0;
+  display: flex;
 }
 
+.admission-wrapper {
+  background-color: #f3f8f9;
+}
 
-.admission-boxcontent{
-    max-width: 700px;
-    text-align: left;
-    padding-left: 90px;
-    padding-right: 15px;
-    animation-name: animation-boxcontent;
+.admission-boxcontent {
+  padding: 70px;
+  max-width: 700px;
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 15px;
+  animation-name: animation-boxcontent;
 }
-.admission-image{
-    max-width: 100%;
+.admission-image img {
+  height: 100%;
+  background-size: cover;
+  max-width: 100%;
 }
-h1.admission-title{
-    padding-top: 30px;
-    font-weight: 700px;
+.admission-title {
+  margin-bottom: 20px !important;
+  padding-top: 30px;
+  font-weight: 700px;
 }
-.admisstion-content{
-    padding: 15px;
-    line-height: 26px;
-    margin-bottom: 30px;
+.admisstion-content {
+  width: 90%;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 30px;
 }
-.admission-button{
-    border: none;
-    border-radius: 20px;
-    padding: 15px 55px;
-    background-color:#226FB7;
-    color: white;
-    font-weight: 700 !important;
+.admission-button {
+  border: 1px solid #226fb7;
+  border: none;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 12px 40px;
+  background-color: #226fb7;
+  color: white;
+  font-size: 16px;
+  font-weight: 700 !important;
 }
-.admission-button:hover{
-    background-color: rgb(45, 137, 228);
+.admission-button:hover {
+  background-color: rgb(45, 137, 228);
 }
-@keyframes animation-boxcontent{
-    from{bottom: 0;};
-    to{top:0};
-    
+
+@keyframes animation-boxcontent {
+  from {
+    bottom: 0;
+  }
+  to {
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .section-admission{
-        display: block;
-    }
+
 }
 
+@media only screen and (max-width: 768px) {
+  .admission-boxcontent {
+    padding: 0;
+    padding-left: 30px;
+  }
+  .admission-button {
+    padding: 10px 30px !important;
+    font-size: 15px;
+  }
+  .admission-wrapper {
+    padding-bottom: 20px;
+  }
+}

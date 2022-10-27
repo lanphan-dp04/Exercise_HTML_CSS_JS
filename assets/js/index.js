@@ -13,7 +13,6 @@ handleRenderActive();
 handleClickVideo();
 handleSlider();
 
-console.log('123');
 //animation
 // handleReveal();
 

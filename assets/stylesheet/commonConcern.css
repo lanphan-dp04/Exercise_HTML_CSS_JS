@@ -1,5 +1,5 @@
 .concern-list {
-  margin: 0;
+  margin: 0  !important;
   background-color: #f9f8f8;
 }
 .concern-item-wrapper {
@@ -198,6 +198,9 @@
   .concern-item-wrapper {
     padding: 0 15px;
   }
+  .categories-item {
+    width: 100%;
+  }
   .question-item-header {
     padding: 15px;
   }
@@ -220,6 +223,9 @@
 
 /* UI Phone */
 @media screen and (max-width: 480px) {
+  .section-concern .container {
+    padding: unset;
+  }
   /* main-concern */
   .iframe-wrapper {
     width: 90%;
