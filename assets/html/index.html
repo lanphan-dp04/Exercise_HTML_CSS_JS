@@ -24,10 +24,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../stylesheet/style.css" />
-    <link rel="stylesheet" href="../stylesheet/haveMust.css" />
-    <link rel="stylesheet" href="../stylesheet/mainCampus.css" />
-    <link rel="stylesheet" href="../stylesheet/commonConcern.css" />
-    <link rel="stylesheet" href="../stylesheet/alumniSaying.css" />
+    <link rel="stylesheet" href="../stylesheet/header.css"/>
+    <link rel="stylesheet" href="../stylesheet/addmission.css"/>
+
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -36,54 +36,129 @@
     <title>Dev Plus</title>
   </head>
   <body>
-    <section class="section-categories">
-      <div class="container container-lg container-md container-sm">
-        <div class="categories-title-wrapper">
-          <h2 class="title categories-title text-bold">
-            What an engineer after Devplus will must have?
-          </h2>
-        </div>
-        <ul class="categories-list js-categories js-reveal row"></ul>
-      </div>
-    </section>
-    <section class="section-campus">
-      <div class="container container-sm container-md container-lg">
-        <h2 class="campus-title title text-bold">Our main campus</h2>
-        <ul class="campus-list js-campus-list js-reveal row"></ul>
-      </div>
-    </section>
-    <section class="section-concern">
-      <div class="container container-md container-lg js-container-concern">
-        <div class="concern-list row">
-          <div class="concern-item col-xl-6">
-            <div class="concern-item-wrapper">
-              <h2 class="concern-title title text-bold">
-                Some common concerns
-              </h2>
-              <ul class="question-list js-question-list"></ul>
+    <header>
+      <div class="header-navigation">
+      <div class=" container header-wrapper">
+        <nav class="navbar navbar-expand-lg " style="padding-top:30px">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="header-logo" src="../image/offcanvasImage/logodevplus.png" alt="devplus">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  mb-2 mb-lg-0"> <!-- xoa me-auto de can lai header-->
+                <li class="nav-item">
+                  <a class="nav-link active header-nav" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav" href="#">ABOUT DEVPLUS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle header-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    OUR PROGRAME
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item header-nav" href="#">ONE PLUS CAMPUS</a></li>
+                    <li><a class="dropdown-item header-nav" href="#">TWO PLUS CAMPUS</a></li>
+                    <li><a class="dropdown-item header-nav" href="#">THREE PLUS CAMPUS </a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav" href="#">DEVPLUS ACTIVITIES</a>
+                </li>
+                <li class="nav-item">                 
+                </li>
+              </ul>
+              <div id="slidebar">
+                <span>
+
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="concern-item concern-video col-xl-6">
-            <a href="#" class="popup-videos">
-              <i class="fa fa-play"></i>
-            </a>
-          </div>
-        </div>
+        </nav>
       </div>
-    </section>
-    <div class="rs-banner" style="background-image:url(/assets/img_AboutDevPlus/Img-bg.png)">
-      <div class="container-nanner">
-        <div class="banner-content">
-          <h1>Devplus will support the early stage developers go the right career path</h1>
-          <div class="banner-text">Devplus is not a training center, it’s battle campus for you to level up your skillsets
-            and ready to onboard any projects in our “kindest” companies listing</div>
-          <div class="banner-btn">
-            <a class="readon" href="https://stunited.typeform.com/registration ">Learn
-              more</a>
+   </div>
+  </header>
+    <div class="slidebar-container">
+      <div class="slidebar-kickoff">
+          <div id="line">
+              <span class="line1"></span>
+              <span class="line2"></span>
           </div>
-        </div>
       </div>
-    </div>
+  
+      
+      <div class="slidebar-boxlogo">
+          <img class="slidebar-logo" src="../image/offcanvasImage/logodevplus.png" alt="devplus">
+      </div>
+  
+      <div class="slidebar-boxcontent">
+          <p class="slidebar-content">Devplus's mission is filling the gap between school and corporate, 
+              reduce in-house training cost and effort for IT companies.</p>
+      </div>
+      
+      <div class="slidebar-imagebox">
+          <img src="../image/offcanvasImage/1.png" alt="devplus" class="slidebar-image">
+          <img src="../image/offcanvasImage/2.png" alt="devplus" class="slidebar-image">
+          <img src="../image/offcanvasImage/3.png" alt="devplus" class="slidebar-image">
+          <img src="../image/offcanvasImage/4.png" alt="devplus" class="slidebar-image">
+          <img src="../image/offcanvasImage/5.png" alt="devplus" class="slidebar-image">
+          <img src="../image/offcanvasImage/6.png" alt="devplus" class="slidebar-image">
+      </div>
+    
+      <div class="slidebar-map">
+          <img style="max-width: 100%;"src="../image/offcanvasImage/map.png" alt="devplus" class="slidebar-image-map">
+      </div>
+  
+      <div class="slidebar-facebookicon">
+          <a href="https://www.facebook.com/Devplusprogramme" target="_blank">
+              <i class="fa-brands fa-facebook"></i>            </a>
+      </div>
+  </div>
+
+  <div id="modal-container">
+      <div class="modal-box">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <button type="button" class="modal-closebutton"><i class="fa-solid fa-xmark"></i></button>
+  
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../image/offcanvasImage/1.png" class="d-block w-100" alt="STunited"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/offcanvasImage/2.png" class="d-block w-100" alt="STunited"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/offcanvasImage/3.png" class="d-block w-100" alt="STunited"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/offcanvasImage/4.png" class="d-block w-100" alt="STunited"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/offcanvasImage/5.png" class="d-block w-100" alt="STunited"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../image/offcanvasImage/6.png" class="d-block w-100" alt="STunited"/>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  
+      </div>
+  </div>
+    
     <section class="section-saying">
       <div class="container container-lg container-md">
         <h2 class="saying-title title text-bold">What alumni saying</h2>
@@ -170,6 +245,63 @@
         </ul>
       </div>
     </section>
+    <section class="section-concern">
+      <div class="container container-md container-lg js-container-concern">
+        <div class="concern-list row">
+          <div class="concern-item col-xl-6">
+            <div class="concern-item-wrapper">
+              <h2 class="concern-title title text-bold">
+                Some common concerns
+              </h2>
+              <ul class="question-list js-question-list"></ul>
+            </div>
+          </div>
+          <div class="concern-item concern-video col-xl-6">
+            <a href="#" class="popup-videos">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-campus">
+      <div class="container container-sm container-md container-lg">
+        <h2 class="campus-title title text-bold">Our main campus</h2>
+        <ul class="campus-list js-campus-list row">
+          
+        </ul>
+      </div>
+    </section>
+
+    <!--Admission-->
+    <section class="section-admission">
+      <div class="admission-image">
+        <img src="https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png" alt="STunited">
+      </div>
+      <div class="admission-boxcontent">
+        <h1 class="admission-title">Admission for 2021</h1  >
+        <p class="admisstion-content">
+          Disclaimer: This position is expected to start around Feb 2022 and continue through the entire Summer term. We ask for a minimum of 12 weeks, full-time, for most internships. Please consider before submitting an application.<br>
+          Devplus aims to provide students the chance to work with our clients and awesome mentors to level up your programing skillset in the RIGHT path. With your education and experience, you will be able to take on real-world challenges from day one.
+        </p>
+        <a href="https://stunited.typeform.com/registration" target="_blank">
+          <button class="admission-button" type="button"> APPLY NOW</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Phan Huu Lan -->
+    <section class="section-categories">
+      <div class="container container-lg container-md container-sm">
+        <div class="categories-title-wrapper">
+          <h2 class="title categories-title text-bold">
+            What an engineer after Devplus will must have?
+          </h2>
+        </div>
+        <ul class="categories-list js-categories row"></ul>
+      </div>
+    </section>
+
     <!-- JavaScript Bundle with Popper -->
     <!-- <script type="module" src="../js/index.js"></script> -->
     <script
@@ -190,5 +322,10 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <!--header js-->
+    <script src="../js/header/header.js"></script>
+    <script src="../js/index.js"></script>
+
   </body>
 </html>
