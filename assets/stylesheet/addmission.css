@@ -1,24 +1,28 @@
 .section-admission{
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 2%;
     background-color: #f3f8f9;
-    padding: 20px;
 }
 
 
 .admission-boxcontent{
+    max-width: 700px;
     text-align: left;
-    margin-left: 50px;
-    padding: 20px;
+    padding-left: 90px;
+    padding-right: 15px;
     animation-name: animation-boxcontent;
 }
 .admission-image{
     max-width: 100%;
 }
 h1.admission-title{
-    text-align: center  ;
+    padding-top: 30px;
     font-weight: 700px;
+}
+.admisstion-content{
+    padding: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 .admission-button{
     border: none;
@@ -27,7 +31,6 @@ h1.admission-title{
     background-color:#226FB7;
     color: white;
     font-weight: 700 !important;
-    margin-top: 40px;
 }
 .admission-button:hover{
     background-color: rgb(45, 137, 228);
