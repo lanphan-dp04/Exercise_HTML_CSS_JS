@@ -1,48 +1,4 @@
 
-:root {
-    --color-black: #111111;
-    --color-line-black : #505050;
-  }
-  
-  /* reset css */
-  
-  * {
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-  }
-  
-  ul,li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  img {
-      display: block;
-      max-width: 100%;
-  }
-  h1,h2,h3,h4,h5,h6 {
-    color: var(--color-black);
-    margin: 0 0 26px;
-    line-height: 1.2;
-  }
-  
-  
   /* common font-text */
   
   .text-regular {
@@ -205,17 +161,9 @@
   .fb-color {
     color: #6a6a6a;
     padding-left: 10px;
+    margin-block-start: 0px;
   }
-  
-  .col-img {
-    background-color: #273c66;
-  }
-  
-  .col-link {
-    background-color: #273c66;
-  }
-  
-  
+
   .row-footer .col-img img {
     max-width: 190px;
   }
