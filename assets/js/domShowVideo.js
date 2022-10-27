@@ -1,6 +1,3 @@
-
-
-
 const divIframe = document.createElement('div');
 divIframe.classList.add('iframe-wrapper');
 
@@ -27,14 +24,14 @@ export const handleClickVideo = () => {
     const divBgBody = document.createElement('div')
     divBgBody.classList.add('js-bg-body')
   
-    document.body.appendChild(divBgBody)
+    document.body.append(divBgBody)
     divIframe.style.display = 'block';
     document.querySelector('.js-container-concern').appendChild(divIframe);
-  
   })
 }
 
 const handeDeleteShow = () => {
   divIframe.style.display = 'none';
+  divIframe.remove();
   document.querySelector('.js-bg-body').remove();
 } 
