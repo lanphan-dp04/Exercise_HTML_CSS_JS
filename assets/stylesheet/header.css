@@ -1,10 +1,7 @@
 body{
     box-sizing: border-box;
 }
-a{
-    font-weight: 700;
-    color: rgba(0,0,0,.9) !important;
-}
+
 p {
     display: block;
     margin-block-start: 1em;
