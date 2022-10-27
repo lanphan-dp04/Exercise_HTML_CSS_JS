@@ -42,6 +42,7 @@
   transition: all 0.3s ease;
 }
 .course-image img {
+  width: 100%;
   border-radius: 5px;
 }
 .campus-desc {
@@ -50,14 +51,12 @@
 }
 
 /* UI Desktop */
+
 @media screen and (min-width: 1024px) {
   /* main-campus */
 
   .campus-title {
     font-size: 35px;
-  }
-  .campus-desc {
-    font-size: 19px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -90,6 +89,9 @@
 
 /* UI Tablet */
 @media screen and (max-width: 768px) {
+  .campus-item  {
+    width: 100%;
+  }
 }
 
 /* UI Phone */

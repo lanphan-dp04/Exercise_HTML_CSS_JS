@@ -21,6 +21,7 @@ divIframe.appendChild(iframe);
 export const handleClickVideo = () => {
   const showElement = document.querySelector('.popup-videos');
   showElement.addEventListener('click', e => {
+    document.getElementById('header').style = 'position: absolute;z-index: 1'
     const divBgBody = document.createElement('div')
     divBgBody.classList.add('js-bg-body')
   
@@ -31,6 +32,7 @@ export const handleClickVideo = () => {
 }
 
 const handeDeleteShow = () => {
+  document.getElementById('header').style = '';
   divIframe.style.display = 'none';
   divIframe.remove();
   document.querySelector('.js-bg-body').remove();
