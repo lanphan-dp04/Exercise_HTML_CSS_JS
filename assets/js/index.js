@@ -3,7 +3,7 @@ import { handleRenderActive } from "./domConcern.js";
 import { handleClickVideo } from "./domShowVideo.js";
 import { renderCampus } from "./domCampus.js";
 import { renderCourses } from "./domMustHave.js";
-// import { handleReveal } from "./animation.js";
+import { handleReveal } from "./animation.js";
 
 // have-must
 renderCourses();
@@ -14,5 +14,5 @@ handleClickVideo();
 handleSlider();
 
 //animation
-// handleReveal();
+handleReveal();
 
