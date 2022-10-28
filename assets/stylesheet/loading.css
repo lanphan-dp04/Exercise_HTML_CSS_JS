@@ -16,7 +16,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  animation: ring 2s linear;
+  animation: ring 2.5s linear;
 }
 
 .ring::before {
@@ -34,7 +34,7 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  animation: img 2s ease-in-out;
+  animation: img 2.5s ease-in-out;
 }
 
 @keyframes ring {

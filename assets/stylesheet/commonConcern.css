@@ -78,6 +78,7 @@
 
 /* show-video-concern */
 .popup-videos {
+  border: none;
   cursor: pointer;
   position: absolute;
   top: 50%;
