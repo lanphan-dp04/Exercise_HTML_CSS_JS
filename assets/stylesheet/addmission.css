@@ -61,6 +61,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .admission-image img {
+    width: 100%;
+    height: unset;
+  }
   .admission-boxcontent {
     padding: 0;
     padding-left: 30px;
