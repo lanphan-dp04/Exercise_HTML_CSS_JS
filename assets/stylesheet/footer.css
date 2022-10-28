@@ -21,10 +21,14 @@
 
 /* UI Tablet */
 @media screen and (max-width: 768px) {
+  .col-link {
+    margin-left: 15px;
+  }
 }
 
 /* UI Phone */
 @media screen and (max-width: 480px) {
+
 }
 
 /* START CSS FOOTER */
