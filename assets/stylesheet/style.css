@@ -73,3 +73,6 @@ h6 {
   transform: translateY(0);
   opacity: 1;
 }
+.devPlus-wrapper {
+  margin-top: 100px;
+}
